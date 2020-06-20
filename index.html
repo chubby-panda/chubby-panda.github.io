@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sophie Phoon is a web developer based in Perth, Australia.">
+    <meta name="author" content="Sophie Phoon">
+    <script src="https://kit.fontawesome.com/91c7533035.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sophie Phoon | Web Developer Perth
+    </title>
+</head>
+<body>
+    <!-- Header: Showcase and Navbar -->
+    <header>
+        <div id="showcase">
+            <div id="sun">
+                <svg class="sun-icon" viewBox="0 0 43.4 43.4">
+                    <circle class="circle" fill="none" cx="21.7" cy="21.5" r="11"/>
+                    <line class="ray" x1="15.6" y1="7.6" x2="13.2" y2="1.8"/>
+                    <line class="ray" x1="30.2" y1="41.6" x2="27.7" y2="35.8"/>
+                    <line class="ray" x1="7.6" y1="27.7" x2="1.8" y2="30.2"/>
+                    <line class="ray" x1="41.6" y1="13.2" x2="35.8" y2="15.6"/>
+                    <line class="ray" x1="7.4" y1="16" x2="1.6" y2="13.6"/>
+                    <line class="ray" x1="41.8" y1="29.7" x2="35.9" y2="27.4"/>
+                    <line class="ray" x1="16" y1="35.9" x2="13.6" y2="41.8"/>
+                    <line class="ray" x1="29.7" y1="1.6" x2="27.4" y2="7.4"/>
+                  </svg>
+            </div>
+            <div id="speech-bubble">
+                <h1><span class="emphasis-text">Hi,</span> I'm Sophie.</h1>
+                <p>Welcome to my website. I'm a freelance web developer and language enthusiast.</p>
+                <a class="button" href="#about">Get to know me</a>
+            </div>
+            <div class="profile-image">
+                <img src="images/profile.jpeg" alt="Sophie Phoon">
+            </div>
+            <i class="fas fa-chevron-down fa-2x"></i>
+        </div>
+        <nav class="navbar">
+            <a class="current-page" href="#"><span class="perimeters">{ </span>Home<span class="perimeters"> }</span></a>
+            <a href="#about"><span class="perimeters">{ </span>About<span class="perimeters"> }</span></a>
+            <a href="#contact"><span class="perimeters">{ </span>Contact<span class="perimeters"> }</span></a>
+            <a href="portfolio.html"><span class="perimeters">{ </span>Portfolio<span class="perimeters"> }</span></a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="main-body">
+        <img src="images/profile-image.jpg" alt="Sophie Phoon">
+        <article>
+            <h2>This is my <span class="emphasis-text">story.</span></h2>
+            <p class="subtext">Hello there! I’m Sophie, and I’m a Web Developer.</p>
+            <br>
+            <p>Originally from Ireland, I moved to Perth, Australia in 2015 and quickly fell in love with the place (as well as a rather lovely Aussie bloke!) and decided to stay. I’m a world traveller and language aficionado with proficiency in a range of 'human' languages, and I’ve had the privilege of working in many different industries, including tourism, e-commerce, media and higher education.</p>
+            <br>
+            <p>But it was while I was interning for national magazine, Offspring, that I found my calling. We were asked for ideas on how to improve the website, and I found myself inexplicably drawn to the ins and outs of how that might be achieved: the semantic tags to improve SEO, the animation possibilities of CSS and JavaScript, and the beauty of a well-structured HTML document. </p>
+            <br>
+            <p>After a year of self-paced study and online courses, I took my first brave baby steps into the tech community in Perth<span id="dots">...</span><span id="more"> and found a group of like-minded individuals in She Codes. In November 2020, I graduated from the She Codes Plus Program (Perth), where I gained a range of coding skills, and of course added a few more languages to my repertoire. We got to study HTML, CSS, JavaScript, Git, Python, Django, React, REST APIs, and more. Not only did the program give me hands-on experience with real-world code and working in an agile programming environment, but it gave me the confidence I needed to go forth and program! <br><br>But Sophie, you might ask, what use are these 'human' languages in a tech team? Well, I believe that my ability to connect and communicate not only makes me a valuable member of any work team, but a wonderful web developer as well. After all, the purpose of all code is to convey meaning. And I do that with excellence. <br><br>So, if you're interested in working with me, <a class="emphasis-text" href="#contact">drop me a line.</a> I look forward to hearing from you!</span></p>
+            <button class="button" onclick="myFunction()" id="myBtn">Read more</button>
+
+        </article>
+    </section>
+
+    <div class="parallax-1"></div>
+
+    <!-- Work Section -->
+    <section id="work" class="main-body">
+        <h2>This is some of my <span class="emphasis-text">work.</span></h2>
+        <div class="work-items">
+            <div class="work-item">
+
+            </div>
+            <div class="work-item">
+
+            </div>
+            <div class="work-item">
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-2"></div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="main-body">
+        <form action="https://formspree.io/xyynpydr" method="POST">
+            <h2>This is how you <span class="emphasis-text">contact me.</span></h2>
+            <div class="form-item">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-item">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="email" required>
+            </div>
+            <div class="form-item">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" name="message" cols="30" rows="10" required></textarea>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <i class="far fa-envelope"></i>
+        <p>sophie.j.phoon@gmail.com</p>
+        <i class="fas fa-phone-alt"></i>
+        <a href="tel:0459819575">0459-819-575</a>
+    </footer>
+
+<script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</body>
+</html>

@@ -79,6 +79,13 @@ h1, h2 {
     letter-spacing: 0.2em;
 }
 
+.h-line {
+    height: 5px;
+    width: 300px;
+    background-color: var(--accent-color-1);
+    margin: 10px auto;
+}
+
 /* Parallax */
 .parallax-1 {
     background-image: url(./images/beach-bg.jpg);
@@ -208,10 +215,6 @@ header .navbar a:hover .perimeters {
 }
 
 /* Main Body Styling */
-#about.main-body {
-    display: flex;
-}
-
 .main-body article {
     width: 70%;
     padding: 20px;
@@ -235,6 +238,10 @@ header .navbar a:hover .perimeters {
     padding: 30px 60px;
 }
 
+#about.main-body {
+    display: flex;
+}
+
 #about img {
     height: 400px;
     width: auto;
@@ -247,11 +254,10 @@ header .navbar a:hover .perimeters {
 #work {
     background-color: var(--white-color);
     color: var(--dark-color);
-    height: 600px;
+    padding: 50px;
 }
 
 #work h2 {
-    /* border-bottom: 5px solid var(--sun-color); */
     padding: 20px 30px 20px 0;
     margin-bottom: 40px;
 }
@@ -274,6 +280,71 @@ header .navbar a:hover .perimeters {
     width: 300px;
     margin: 0 20px;
     background: var(--accent-color-2);
+}
+
+/* Contact Form */
+#contact.main-body {
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact.main-body h2 {
+    margin-bottom: 50px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item label {
+    margin-bottom: 10px;
+}
+
+.form-item input,
+.form-item textarea {
+    outline: none;
+    padding: 10px;
+    border: 1px solid var(--grey-color);
+}
+
+.form-item input:focus, 
+.form-item textarea:focus {
+    border: 1px solid var(--main-color);
+}
+
+.form-item button {
+    align-self: center;
+}
+
+/* Footer */
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 20px;
+    color: var(--white-color);
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .footer-item {
+    display: flex; 
+    align-items: center;
+}
+
+footer .footer-item i {
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+footer .footer-item a {
+    color: var(--white-color);
 }
 
 /* SVG Keyframe Animation */

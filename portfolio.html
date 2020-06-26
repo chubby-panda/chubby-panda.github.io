@@ -7,7 +7,7 @@
     <meta name="author" content="Sophie Phoon">
     <script src="https://kit.fontawesome.com/91c7533035.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Sophie Phoon | Web Developer Perth
+    <title>Sophie Phoon | Portfolio
     </title>
 </head>
 <body>
@@ -19,18 +19,24 @@
     <!-- Header: Showcase and Navbar -->
     <header class="dashed-line">
         <div class="subpage-showcase"></div>
-        <nav class="navbar">
-            <a href="index.html"><span class="perimeters">{ </span>Home<span class="perimeters"> }</span></a>
-            <a href="about.html"><span class="perimeters">{ </span>About<span class="perimeters"> }</span></a>
-            <a href="contact.html"><span class="perimeters">{ </span>Contact<span class="perimeters"> }</span></a>
-            <a class="current-page" href="portfolio.html"><span class="perimeters">{ </span>Portfolio<span class="perimeters"> }</span></a>
+        <nav class="navbar" id="myNavbar">
+            <!-- Smaller screens hamburger icon -->
+            <a href="javascript:void(0);" id="icon" onclick="showMenu()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+            <div id="links">
+                <a class="link" href="index.html"><span class="perimeters">{ </span>Home<span class="perimeters"> }</span></a>
+                <a class="link" href="about.html"><span class="perimeters">{ </span>About<span class="perimeters"> }</span></a>
+                <a class="link" href="contact.html"><span class="perimeters">{ </span>Contact<span class="perimeters"> }</span></a>
+                <a class="current-page link" href="portfolio.html"><span class="perimeters">{ </span>Portfolio<span class="perimeters"> }</span></a>
+            </div>
         </nav>
         <h1 class="text-center p-3 m-3">This is my <span class="emphasis-text">portfolio.</span></h1>
     </header>
 
     <!-- Portfolio Items -->
     <div id="portfolio">
-        <div id="project-1" class="project">
+        <div id="project-1" class="project flex">
             <div>
                 <img class="project-image" src="images/project-example.png" alt="project">
             </div>
@@ -40,7 +46,7 @@
                 <a class="button" href="#">See Github repo</a>
             </div>
         </div>
-        <div id="project-2" class="project">
+        <div id="project-2" class="project flex">
             <div>
                 <img class="project-image" src="images/project-example.png" alt="project">
             </div>
@@ -50,7 +56,7 @@
                 <a class="button" href="#">See Github repo</a>
             </div>
         </div>
-        <div id="project-3" class="project">
+        <div id="project-3" class="project flex">
             <div>
                 <img class="project-image" src="images/project-example.png" alt="project">
             </div>
@@ -60,7 +66,7 @@
                 <a class="button" href="#">See Github repo</a>
             </div>
         </div>
-        <div id="project-4" class="project">
+        <div id="project-4" class="project flex">
             <div>
                 <img class="project-image" src="images/project-example.png" alt="project">
             </div>
@@ -70,12 +76,12 @@
                 <a class="button" href="#">See Github repo</a>
             </div>
         </div>
-        <div id="project-5" class="project">
+        <div id="project-5" class="project flex">
             <div>
                 <img class="project-image" src="images/project-example.png" alt="project">
             </div>
             <div class="project-description">
-                <h2>Project 5: Putting It All Together Together</h2>
+                <h2>Project 5: Putting It All Together Altogether</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, repellat? Facilis, consequatur? Nesciunt culpa quisquam asperiores pariatur deleniti cupiditate ex ea eligendi consequatur soluta voluptas aut voluptate harum magni porro ducimus ratione, rerum vero quas a earum vitae. Reiciendis perspiciatis et nulla dolores sequi asperiores ut dignissimos modi tenetur labore?</p>
                 <a class="button" href="#">See Github repo</a>
             </div>
@@ -83,7 +89,7 @@
     </div>
 
     <!-- Footer Section -->
-    <footer>
+    <footer class="flex">
         <div class="footer-item">
             <i class="far fa-envelope"></i>
             <a href="mailto:sophie.j.phoon@gmail.com">sophie.j.phoon@gmail.com</a>
@@ -93,6 +99,6 @@
             <a href="tel:0459819575">0459-819-575</a>
         </div>
     </footer>
-
+    <script src="main.js"></script>
 </body>
 </html>

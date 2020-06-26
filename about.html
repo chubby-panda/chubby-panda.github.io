@@ -7,7 +7,7 @@
     <meta name="author" content="Sophie Phoon">
     <script src="https://kit.fontawesome.com/91c7533035.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Sophie Phoon | Web Developer Perth
+    <title>Sophie Phoon | About
     </title>
 </head>
 <body>
@@ -19,17 +19,23 @@
     <!-- Header: Showcase and Navbar -->
     <header class="dashed-line">
         <div class="subpage-showcase"></div>
-        <nav class="navbar">
-            <a href="index.html"><span class="perimeters">{ </span>Home<span class="perimeters"> }</span></a>
-            <a class="current-page" href="about.html"><span class="perimeters">{ </span>About<span class="perimeters"> }</span></a>
-            <a href="contact.html"><span class="perimeters">{ </span>Contact<span class="perimeters"> }</span></a>
-            <a href="portfolio.html"><span class="perimeters">{ </span>Portfolio<span class="perimeters"> }</span></a>
+        <nav class="navbar" id="myNavbar">
+            <!-- Smaller screens hamburger icon -->
+            <a href="javascript:void(0);" id="icon" onclick="showMenu()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+            <div id="links">
+                <a class="link" href="index.html"><span class="perimeters">{ </span>Home<span class="perimeters"> }</span></a>
+                <a class="current-page link" href="about.html"><span class="perimeters">{ </span>About<span class="perimeters"> }</span></a>
+                <a class="link" href="contact.html"><span class="perimeters">{ </span>Contact<span class="perimeters"> }</span></a>
+                <a class="link" href="portfolio.html"><span class="perimeters">{ </span>Portfolio<span class="perimeters"> }</span></a>
+            </div>
         </nav>
         <h1 class="text-center p-3 m-3">This is my <span class="emphasis-text">story.</span></h1>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="main-body">
+    <section id="about" class="main-body flex">
         <img src="images/profile-image.jpg" alt="Sophie Phoon">
         <article>
             <p class="subtext">Hello there! I’m Sophie, and I’m a Web Developer.</p>
@@ -55,8 +61,53 @@
         </div>
     </section>
 
+    <section id="skills" class="">
+        <h2>These are some of my <span class="emphasis-text">skills.</span></h2>
+        <div id="progress">
+            <h3 class="subtext">HTML</h3>
+            <div class="progress-bar">
+                <div style="width: 50%;"></div>
+            </div>
+            <h3 class="subtext">CSS</h3>
+            <div class="progress-bar">
+                <div style="width: 40%;"></div>
+            </div>
+            <h3 class="subtext">JavaScript</h3>
+            <div class="progress-bar">
+                <div style="width: 5%;"></div>
+            </div>
+            <h3 class="subtext">Python</h3>
+            <div class="progress-bar">
+                <div style="width: 20%;"></div>
+            </div>
+            <h3 class="subtext">React</h3>
+            <div class="progress-bar">
+                <div style="width: 0%;"></div>
+            </div>
+            <h3 class="subtext">Django</h3>
+            <div class="progress-bar">
+                <div style="width: 0%;"></div>
+            </div>
+            <h3 class="subtext">Git</h3>
+            <div class="progress-bar">
+                <div style="width: 30%;"></div>
+            </div>
+            <h3 class="subtext">Googling stuff</h3>
+            <div class="progress-bar">
+                <div style="width: 100%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="summary-container">
+        <div id="summary">
+            <h2>Download <span class="emphasis-text">my CV.</span></h2>
+            <a href="files/sophie_j_phoon_cv.pdf" download><i class="fas fa-file-pdf fa-3x"></i></a>
+        </div>
+    </section>
+
     <!-- Footer Section -->
-    <footer>
+    <footer class="flex">
         <div class="footer-item">
             <i class="far fa-envelope"></i>
             <a href="mailto:sophie.j.phoon@gmail.com">sophie.j.phoon@gmail.com</a>

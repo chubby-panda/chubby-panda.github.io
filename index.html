@@ -19,7 +19,7 @@
     <!-- Header: Showcase and Navbar -->
     <header>
         <div id="showcase">
-            <div id="sun">
+            <div>
                 <svg class="sun-icon" viewBox="0 0 43.4 43.4">
                     <circle class="circle" fill="none" cx="21.7" cy="21.5" r="11"/>
                     <line class="ray" x1="15.6" y1="7.6" x2="13.2" y2="1.8"/>
@@ -32,26 +32,30 @@
                     <line class="ray" x1="29.7" y1="1.6" x2="27.4" y2="7.4"/>
                   </svg>
             </div>
-            <div id="speech-bubble">
+            <div id="speech-bubble" class="flex">
                 <h1><span class="emphasis-text">Hi,</span> I'm Sophie.</h1>
                 <p>Welcome to my website. I'm a freelance web developer and language enthusiast based in Perth, Australia.</p>
                 <a class="button" href="#about">Get to know me</a>
             </div>
-            <div class="profile-image">
-                <img src="images/profile.jpeg" alt="Sophie Phoon">
-            </div>
             <i class="fas fa-chevron-down fa-2x"></i>
         </div>
-        <nav class="navbar">
-            <a class="current-page" href="index.html"><span class="perimeters">{ </span>Home<span class="perimeters"> }</span></a>
-            <a href="about.html"><span class="perimeters">{ </span>About<span class="perimeters"> }</span></a>
-            <a href="contact.html"><span class="perimeters">{ </span>Contact<span class="perimeters"> }</span></a>
-            <a href="portfolio.html"><span class="perimeters">{ </span>Portfolio<span class="perimeters"> }</span></a>
+        <!-- NAVBAR -->
+        <nav class="navbar" id="myNavbar">
+            <!-- Smaller screens hamburger icon -->
+            <a href="javascript:void(0);" id="icon" onclick="showMenu()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+            <div id="links">
+                <a class="current-page link" href="index.html"><span class="perimeters">{ </span>Home<span class="perimeters"> }</span></a>
+                <a class="link" href="about.html"><span class="perimeters">{ </span>About<span class="perimeters"> }</span></a>
+                <a class="link" href="contact.html"><span class="perimeters">{ </span>Contact<span class="perimeters"> }</span></a>
+                <a class="link" href="portfolio.html"><span class="perimeters">{ </span>Portfolio<span class="perimeters"> }</span></a>
+            </div>
         </nav>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="main-body">
+    <section id="about" class="main-body flex">
         <img src="images/profile-image.jpg" alt="Sophie Phoon">
         <article>
             <h2>This is my <span class="emphasis-text">story.</span></h2>
@@ -62,8 +66,7 @@
             <p>But it was while I was interning for national magazine, Offspring, that I found my calling. We were asked for ideas on how to improve the website, and I found myself inexplicably drawn to the ins and outs of how that might be achieved: the semantic tags to improve SEO, the animation possibilities of CSS and JavaScript, and the beauty of a well-structured HTML document. </p>
             <br>
             <p>After a year of self-paced study and online courses, I took my first brave baby steps into the tech community in Perth<span id="dots">...</span><span id="more"> and found a group of like-minded individuals in She Codes. In November 2020, I graduated from the She Codes Plus Program (Perth), where I gained a range of coding skills, and of course added a few more languages to my repertoire. We got to study HTML, CSS, JavaScript, Git, Python, Django, React, REST APIs, and more. Not only did the program give me hands-on experience with real-world code and working in an agile programming environment, but it gave me the confidence I needed to go forth and program! <br><br>But Sophie, you might ask, what use are these 'human' languages in a tech team? Well, I believe that my ability to connect and communicate not only makes me a valuable member of any work team, but a wonderful web developer as well. After all, the purpose of all code is to convey meaning. And I do that with excellence. <br><br>So, if you're interested in working with me, <a class="emphasis-text" href="#contact">drop me a line.</a> I look forward to hearing from you!</span></p>
-            <button class="button" onclick="myFunction()" id="myBtn">Read more</button>
-            <a id="even-more" class="button button-dark" href="about.html">Even more</a>
+            <button class="button" onclick="readMore()" id="myBtn">Read more</button>
 
         </article>
     </section>
@@ -71,17 +74,44 @@
     <div class="parallax-1"></div>
 
     <!-- Work Section -->
-    <section id="work" class="main-body">
+    <section id="work" class="main-body flex">
         <h2>This is some of my <span class="emphasis-text">work.</span></h2>
-        <div class="work-items">
+        <div class="work-items flex">
             <div class="work-item">
-
+                <div class="work-item-image">
+                    <img src="images/project-example.png" alt="project-image">
+                </div>
+                <div class="work-item-text">
+                    <div class="work-item-text-wrap">
+                        <p class="work-item-text-category">HTML/CSS</p>
+                        <h2 class="work-item-text-title">Project 1: my portfolio site</h2>
+                        <a href="#" target="_blank">See on Github</a>
+                    </div>
+                </div>
             </div>
             <div class="work-item">
-
+                <div class="work-item-image">
+                    <img src="images/project-example.png" alt="project-image">
+                </div>
+                <div class="work-item-text">
+                    <div class="work-item-text-wrap">
+                        <p class="work-item-text-category">Python</p>
+                        <h2 class="work-item-text-title">Project 2: The Mysterious Python Project</h2>
+                        <a href="#" target="_blank">See on Github</a>
+                    </div>
+                </div>
             </div>
             <div class="work-item">
-                
+                <div class="work-item-image">
+                    <img src="images/project-example.png" alt="project-image">
+                </div>
+                <div class="work-item-text">
+                    <div class="work-item-text-wrap">
+                        <p class="work-item-text-category"></p>
+                        <h2 class="work-item-text-title">Project 3: My Reaction to React</h2>
+                        <a href="#" target="_blank">See on Github</a>
+                    </div>
+                </div>
             </div>
         </div>
         <a class="button" href="portfolio.html">See my portfolio</a>
@@ -91,7 +121,7 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="main-body">
+    <section class="contact main-body">
         <form action="https://formspree.io/xyynpydr" method="POST">
             <h2>This is how you <span class="emphasis-text">contact me.</span></h2>
             <div class="form-item">
@@ -113,7 +143,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
+    <footer class="flex">
         <div class="footer-item">
             <i class="far fa-envelope"></i>
             <a href="mailto:sophie.j.phoon@gmail.com">sophie.j.phoon@gmail.com</a>
@@ -124,22 +154,6 @@
         </div>
     </footer>
 
-<script>
-    function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-</script>
+<script src="main.js"></script>
 </body>
 </html>

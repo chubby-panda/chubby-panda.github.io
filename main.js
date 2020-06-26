@@ -14,13 +14,23 @@ function readMore() {
     }
   }
 
-function showMenu() {
-    var icon = document.getElementById('icon');
-    var links = document.getElementById('links');
+// function showMenu() {
+//     var icon = document.getElementById('icon');
+//     var links = document.getElementById('links');
 
-    if (links.style.display === 'none') {
-        links.style.display = 'flex';
-    } else if (links.style.display === 'flex') {
-        links.style.display = 'none';
+//     if (links.style.display === 'none') {
+//         links.style.display = 'flex';
+//     } else if (links.style.display === 'flex') {
+//         links.style.display = 'none';
+//     }
+// };
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function showMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
-};
+  }
